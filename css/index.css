@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+body {
+  overflow-x: hidden;
+}
+.nav {
+  background: #00008b;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0.8vh 2vw;
+  min-height: 8vh;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid white;
+  z-index: 10;
+}
+.nav-brand {
+  padding: 0.6rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.nav-links {
+  color: white;
+  display: flex;
+  list-style: none;
+  column-gap: 1.2rem;
+  font-style: bold;
+}
+.nav-link {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 900;
+}
+.nav-link a {
+  text-decoration: none;
+  color: white;
+}
+.nav-link a:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.about-me-head {
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-right img {
+  margin-top: -8vh;
+  height: 92vh;
+}
+.main-left {
+  padding-left: 4vw;
+  margin-top: 12vh;
+}
+#first-name {
+  color: #00008b;
+}
+#last-name {
+  -webkit-text-stroke: 2px #00008b;
+  color: white;
+}
+#btn-hello {
+  background-color: white;
+  color: #00008b;
+  border: 1px solid #00008b;
+  padding: 1.4vh 2vw;
+  font-size: 1.2rem;
+}
+#btn-hello:hover {
+  background-color: #00008b;
+  color: white;
+}
+
+#stack {
+  min-height: 92vh;
+  background: #00008b;
+  padding-bottom: 4vh;
+}
+
+#achivements {
+  min-height: 92vh;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 4vh;
+}
+
+section {
+  overflow-x: hidden;
+  padding-top: 10vh;
+}
+
+.header {
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: monospace;
+}
+
+.color1 {
+  color: white;
+}
+.color2 {
+  color: #00008b;
+}
+
+#projects {
+  padding-top: 3vh;
+  min-height: 92vh;
+  background: #00008b;
+}
+.card-tray {
+  display: flex;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  column-gap: 10px;
+}
+
+#footer {
+  padding: 2vh;
+  background: #272727;
+  color: white;
+}
