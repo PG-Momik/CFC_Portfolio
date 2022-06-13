@@ -155,11 +155,7 @@ section {
   background: #272727;
   color: white;
 }
-
-.btn-outline-light,
-.btn-outline-dark,
-.btn-dark,
-.btn-light {
+.btn {
   font-weight: 900;
   font-size: 1.2rem;
 }

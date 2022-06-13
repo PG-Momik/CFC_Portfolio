@@ -4,49 +4,58 @@ let click_count = 0;
 var i = 0,
   j = 0,
   index = 0;
+class Card {
+  constructor(_title, _desc, _github, _screenshot) {
+    this.title = _title;
+    this.desc = _desc;
+    this.github = _github;
+    this.screenshot = _screenshot;
+  }
+}
+
 let projects = [
-  {
-    title: "KunGadi Web App",
-    desc: "A real time public transportation assistance android application that lets users search public bus travel path using the Google Maps Roads API. Made with ♥ in Android Studios(Java).",
-    github: "https://github.com/PG-Momik/Kun-Gadi-DesktopApp",
-    screenshot: "./images/thumbnails/thumbnail1.png ",
-  },
-  {
-    title: "KunGadi Mobile App",
-    desc: "A web application for Admin side controls for Kun Gadi App. Acts primarily as a admin dashboard to access and manipulate data through a custom API. Made with ♥ in PHP",
-    github: "https://github.com/PG-Momik/Kun-Gadi-MobileApp",
-    screenshot: "./images/thumbnails/thumbnail2.jpg ",
-  },
-  {
-    title: "News Scraping and...",
-    desc: "A web scraping scrpit written in vanilla JS to scrape news articles and store them into a database. The scraped data can then be accessed from a web application. Made with ♥ in JS.",
-    github: "https://github.com/PG-Momik/WebScraping-Archiving",
-    screenshot: "./images/thumbnails/thumbnail3.png",
-  },
-  {
-    title: "noCommerce",
-    desc: "A small eCommerce Website that sells plain Black or White T-Shirts on different price plans and packages. Made with ♥ in PHP.",
-    github: "https://github.com/PG-Momik/noCommerce-The-eCommerce",
-    screenshot: "./images/thumbnails/thumbnail4.png",
-  },
-  {
-    title: "MovieTicketing",
-    desc: "Simple UI for a Movie Booking Website. Made with ♥ with HTML, CSS, JS. ",
-    github: "https://github.com/PG-Momik/MovieTicketingUI",
-    screenshot: "./images/thumbnails/thumbnail5.png",
-  },
-  {
-    title: "Horoscope Readings",
-    desc: "A simple C program that tells users random readings of the day based on their birthday. Made with ♥ with C.",
-    github: "https://github.com/PG-Momik/HoroscopeReadings",
-    screenshot: "./images/thumbnails/thumbnail6.jpeg",
-  },
-  {
-    title: "GreenerGit",
-    desc: "A simple bash script to make commits in the past. Made with ♥ in Bash.",
-    github: "https://github.com/PG-Momik/Greener-Git",
-    screenshot: "./images/thumbnails/thumbnail7.jpg",
-  },
+  new Card(
+    "KunGadi Web App",
+    "A real time public transportation assistance android application that lets users search public bus travel path using the Google Maps Roads API. Made with ♥ in Android Studios(Java).",
+    "https://github.com/PG-Momik/Kun-Gadi-DesktopApp",
+    "./images/thumbnails/thumbnail1.png "
+  ),
+  new Card(
+    "KunGadi Mobile App",
+    "A web application for Admin side controls for Kun Gadi App. Acts primarily as a admin dashboard to access and manipulate data through a custom API. Made with ♥ in PHP",
+    "https://github.com/PG-Momik/Kun-Gadi-MobileApp",
+    "./images/thumbnails/thumbnail2.jpg "
+  ),
+  new Card(
+    "News Scraping and...",
+    "A web scraping scrpit written in vanilla JS to scrape news articles and store them into a database. The scraped data can then be accessed from a web application. Made with ♥ in JS.",
+    "https://github.com/PG-Momik/WebScraping-Archiving",
+    "./images/thumbnails/thumbnail3.png"
+  ),
+  new Card(
+    "noCommerce",
+    "A small eCommerce Website that sells plain Black or White T-Shirts on different price plans and packages. Made with ♥ in PHP.",
+    "https://github.com/PG-Momik/noCommerce-The-eCommerce",
+    "./images/thumbnails/thumbnail4.png"
+  ),
+  new Card(
+    "MovieTicketing",
+    "Simple UI for a Movie Booking Website. Made with ♥ with HTML, CSS, JS. ",
+    "https://github.com/PG-Momik/MovieTicketingUI",
+    "./images/thumbnails/thumbnail5.png"
+  ),
+  new Card(
+    "Horoscope Readings",
+    "A simple C program that tells users random readings of the day based on their birthday. Made with ♥ with C.",
+    "https://github.com/PG-Momik/HoroscopeReadings",
+    "./images/thumbnails/thumbnail6.jpeg"
+  ),
+  new Card(
+    "GreenerGit",
+    "A simple bash script to make commits in the past. Made with ♥ in Bash.",
+    "https://github.com/PG-Momik/Greener-Git",
+    "./images/thumbnails/thumbnail7.jpg"
+  ),
 ];
 
 button_main.addEventListener("click", () => {
@@ -77,7 +86,7 @@ for (i = 0; i < Math.ceil(projects.length / 3); i++) {
       head.classList.add("project-head");
       para.classList.add("project-desc");
       bgroup.classList.add("btn-group");
-      codebase.classList.add("btn", "btn-md", "btn-outline-dark");
+      codebase.classList.add("btn", "btn-md", "btn-info");
       readmore.classList.add("btn", "btn-md", "btn-outline-light", "readme");
 
       head.textContent = projects[index].title;
