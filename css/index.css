@@ -114,7 +114,7 @@ section {
 }
 
 #projects {
-  padding-top: 3vh;
+  padding-top: 10vh;
   min-height: 92vh;
   background: #00008b;
 }
@@ -124,9 +124,46 @@ section {
   padding-right: 4vw;
   column-gap: 10px;
 }
+.cardish-row {
+  justify-content: center;
+  column-gap: 2%;
+  row-gap: 6px;
+  margin-bottom: 3%;
+}
+.cardish {
+  min-height: 30vh;
+  color: white;
+}
+
+.project-head {
+  min-width: 5vh;
+  color: white;
+}
+.project-desc {
+  text-align: justify;
+  text-justify: inter-word;
+  min-height: 30vh;
+  padding: 10px;
+}
+.btn-group {
+  display: flex;
+  column-gap: 2%;
+}
 
 #footer {
   padding: 2vh;
   background: #272727;
   color: white;
+}
+
+.btn-outline-light,
+.btn-outline-dark,
+.btn-dark,
+.btn-light {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.btn-outline-dark {
+  color: black;
+  border: 1px solid black;
 }
