@@ -4,4 +4,4 @@
 
 # Screenshot
 
-<img src = "portfolio.png" >
+<img src = "Screenshot.png" >
